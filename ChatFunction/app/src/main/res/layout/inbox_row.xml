@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/rounder"
+                app:cardCornerRadius="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"
+                    android:id="@+id/profilePic">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Patrick"
+                android:textColor="#000000"
+                android:id="@+id/chatnameTV"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/rounder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Is the package on the way?"
+                android:textColor="#000000"
+                android:id="@+id/lastChatMsgTV"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/rounder"
+                android:layout_below="@+id/chatnameTV"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/timeLastMsgTV"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/chatnameTV"
+                android:text="10:45 AM"
+                android:textColor="#000000"
+                android:textSize="12sp"></TextView>
+    </RelativeLayout>
+</RelativeLayout>
